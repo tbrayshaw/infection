@@ -1,0 +1,22 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ChoiceBox?>
+<GridPane fx:controller="frontend.PregameController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" vgap="20"
+        >
+
+    <Label text="Player 1:  " GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Label text="Player 2:  " GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Button text="Start game!" defaultButton="true" GridPane.rowIndex="2"
+            GridPane.columnIndex="0" GridPane.rowSpan="1" GridPane.columnSpan="2"
+            GridPane.halignment="CENTER" onAction="#startClicked" />
+
+
+    <ChoiceBox fx:id="p1choice" GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="200"/>
+    <ChoiceBox fx:id="p2choice" GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="200"/>
+
+
+
+</GridPane>
+
